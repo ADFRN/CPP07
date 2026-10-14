@@ -6,7 +6,7 @@
 /*   By: afournie <afournie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/28 15:44:05 by afournie          #+#    #+#             */
-/*   Updated: 2026/09/28 15:45:52 by afournie         ###   ########.fr       */
+/*   Updated: 2026/10/14 15:02:23 by afournie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,16 +15,10 @@
 #include "iter.hpp"
 
 template <typename T>
-void increment(T &x)
-{
-	x++;
-}
+void increment(T &x) { x++; }
 
 template <typename T>
-void print(const T &x)
-{
-	std::cout << x << " ";
-}
+void print(const T &x) { std::cout << x << " "; }
 
 void toUpper(std::string &s)
 {

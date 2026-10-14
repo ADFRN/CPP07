@@ -6,7 +6,7 @@
 /*   By: afournie <afournie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/14 12:15:54 by afournie          #+#    #+#             */
-/*   Updated: 2026/10/14 14:30:19 by afournie         ###   ########.fr       */
+/*   Updated: 2026/10/14 15:03:39 by afournie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,26 +21,27 @@ template <typename T>
 class	Array
 {
 	private:
-		T*				_data;
 		unsigned int	_size;
+		T*				_data;
 
 	public:
 		Array();
 		Array(unsigned int n);
 		Array(Array const &ref);
 		Array& operator=(const Array& other);
-		~Array();
 
-		T&			operator[](unsigned int i);
 		const T&	operator[](unsigned int i) const;
+		T&			operator[](unsigned int i);
 
 		unsigned int size() const;
 
 		class OutOfBoundsException : public std::exception
 		{
 			public:
-				virtual const char* what() const throw();
+			virtual const char* what() const throw();
 		};
+
+		~Array();
 };
 
 #include "Array.tpp"
