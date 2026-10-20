@@ -6,7 +6,7 @@
 /*   By: afournie <afournie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/14 12:15:54 by afournie          #+#    #+#             */
-/*   Updated: 2026/10/14 15:03:39 by afournie         ###   ########.fr       */
+/*   Updated: 2026/10/16 12:50:07 by afournie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ template <typename T>
 class	Array
 {
 	private:
-		unsigned int	_size;
 		T*				_data;
+		unsigned int	_size;
 
 	public:
 		Array();
